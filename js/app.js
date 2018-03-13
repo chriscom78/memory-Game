@@ -136,13 +136,13 @@ function checkWin() {
 //////////////////////////////////////////
 function RemoveStar() {
     
-    $('.stars').append(apStar);
+    $('.stars').append.li[1](apStar);
 }
 /////////////////////////////////////////////////
 // add initial stars when the gamw starts  //////
 /////////////////////////////////////////////////
 function addStars() {
-    for (var stars = 0; stars < 3; stars++) {
+    for (var stars = 3; stars > 0; stars--) {
         $('.stars').append(addStar);
     }
 }
