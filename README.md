@@ -19,4 +19,4 @@ I also had some help from my Mentor and others in the FEND Community.
 3. add sound to the game
 4. add text overlay when a mack is found
 
-![](img/343688CD0AFAC90DBD4B681D82F97E38.png)
+![](img/343688CD0AFAC90DBD4B681D82F97E38.png raw=true)
