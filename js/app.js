@@ -9,8 +9,9 @@ let pairFound = 0;
 let gameStart = false;
 let moves = 0;
 let timer = 0;
-const apStar = '<li><i class="fa fa-star-o"></i></li>';
-const addStar = '<li><i class="fa fa-star"></i></li>';
+const oneStar = '<li><i class="fa fa-star"></i></li><li><i class="fa fa-star-o"></i></li><li><i class="fa fa-star-o"></i></li>';
+const twoStar = '<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star-o"></i></li>';
+const threeStar = '<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>';
 ////////////////////
 // Count time //////
 var time = new Timer();
@@ -118,10 +119,10 @@ function updateMoves() {
     moves += 1;
     $('.moves').html(`${moves} Moves`);
     if (moves == 24) {
-        RemoveStar();
+        document.querySelector('.stars').innerHTML = (oneStar);
     }
     else if (moves == 15) {
-        RemoveStar();
+        document.querySelector('.stars').innerHTML = (twoStar);
     }
 }
 // check whether the game is finished or not 
@@ -136,16 +137,14 @@ function checkWin() {
 //////////////////////////////////////////
 function RemoveStar() {
     
-    $('.stars').append.li[1](apStar);
+    $('.stars').append.li(apStar);
 }
 /////////////////////////////////////////////////
 // add initial stars when the gamw starts  //////
 /////////////////////////////////////////////////
 function addStars() {
-    for (var stars = 3; stars > 0; stars--) {
-        $('.stars').append(addStar);
+        document.querySelector('.stars').innerHTML = (threeStar);
     }
-}
 //////////////////////////////////////////////////
 /////////////////////////////////////////////////
 
